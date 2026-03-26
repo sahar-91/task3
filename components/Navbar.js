@@ -33,9 +33,9 @@ export default function Navbar() {
           </div>
           <ul className="flex gap-2.5 list-none md:flex-row flex-col">
             <li className="hover:text-pink-600"><Link href="/">Home</Link></li>
-            <li className="hover:text-pink-600"><Link href="#">Adopt</Link></li>
-            <li className="hover:text-pink-600"><Link href="#">Cat care</Link></li>
-            <li className="hover:text-pink-600"><Link href="#">Contact</Link></li>
+            <li className="hover:text-pink-600"><Link href="/adopt">Adopt</Link></li>
+            <li className="hover:text-pink-600"><Link href="/catCare">Cat care</Link></li>
+            <li className="hover:text-pink-600"><Link href="/contact">Contact</Link></li>
           </ul>
         </nav>
       </header>

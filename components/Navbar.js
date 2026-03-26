@@ -6,7 +6,7 @@ export default function Navbar() {
   const [active, setActive] = useState(false);
 
   return (
-      <div className="bg-white sticky top-0">
+      <div className="bg-white sticky top-0 z-100">
       <header className="container mx-auto px-4 flex justify-between items-center  text-[palevioletred] p-4">
       
         <div className=" text-2xl font-bold hover:text-pink-600">

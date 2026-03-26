@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="bg-white sticky top-0">
       <header className="container mx-auto px-4 flex justify-between items-center  text-[palevioletred] p-4">
       
-        <div className="pl-5 text-2xl font-bold hover:text-pink-600">
+        <div className=" text-2xl font-bold hover:text-pink-600">
           <h2><Link href="/">My Website</Link></h2>
         </div>
         <div 
@@ -31,7 +31,7 @@ export default function Navbar() {
           >
             x
           </div>
-          <ul className="flex gap-2.5 pr-5 list-none md:flex-row flex-col">
+          <ul className="flex gap-2.5 list-none md:flex-row flex-col">
             <li className="hover:text-pink-600"><Link href="/">Home</Link></li>
             <li className="hover:text-pink-600"><Link href="#">Adopt</Link></li>
             <li className="hover:text-pink-600"><Link href="#">Cat care</Link></li>

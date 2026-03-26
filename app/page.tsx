@@ -1,11 +1,17 @@
 import Head from "next/head";
-
-import Banner from '../components/Banner';
-import Grid from '../components/Grid';
+import Grid2 from '../components/Grid2';
+import Banner from "@/components/Banner";
 
 
 export default function Homepage() {
+  const gridItems = [
+  { image: "/cat-sleep.jpg", title: "Sleeping Cat", description: "Cute cat sleeping", buttonText: "See More" },
+  { image: "/cat-sleep.jpg", title: "Sleeping Cat", description: "Cute cat sleeping", buttonText: "See More" },
+  { image: "/cat-sleep.jpg", title: "Sleeping Cat", description: "Cute cat sleeping", buttonText: "See More" },
+  { image: "/cat-sleep.jpg", title: "Sleeping Cat", description: "Cute cat sleeping", buttonText: "See More" },
+];
   return (
+    
     <>
         <Head>
         <title>Homepage</title>
@@ -13,8 +19,12 @@ export default function Homepage() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Homepage description" />
       </Head>
-    <Banner />
-    <Grid />
+    <Banner
+        title="Welcome to Our Website"
+        description="A place where you can find cute kitties and learn how to take proper care of them. Discover adoption options, nutrition tips, and more."
+        bgImage="/cat-banner.jpeg"
+      />
+    <Grid2 items={gridItems} />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Grid2 from '../components/Grid2';
 import Banner from "@/components/Banner";
+import Card1 from "@/components/card1";
 
 
 export default function Homepage() {
@@ -24,7 +25,7 @@ export default function Homepage() {
         description="A place where you can find cute kitties and learn how to take proper care of them. Discover adoption options, nutrition tips, and more."
         bgImage="/cat-banner.jpeg"
       />
-    <Grid2 items={gridItems} />
+    <Grid2 cardType="card1" items={gridItems} />
     </>
   );
 }

@@ -19,7 +19,7 @@ export default function Card1({ image, title, description, buttonText, buttonLin
         {description && <p className="mb-4 text-gray-700">{description}</p>}
         {buttonText && (
           <button
-            onClick={onClick}  // <-- use button instead of <a> and attach onClick
+            onClick={onClick} 
             className="inline-block px-4 py-2 bg-[palevioletred] text-white rounded-lg group-hover:scale-110 transform duration-300 ease-in-out"
           >
             {buttonText}

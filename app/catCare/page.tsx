@@ -1,5 +1,6 @@
 import Grid2 from "@/components/Grid2";
 import Banner from "@/components/Banner";
+import Choice from "@/components/choice";
 
 const facts = [
   { title: "Nutrition", description: "Feed your cat a balanced diet with high-quality cat food. Fresh water is essential." },
@@ -19,6 +20,7 @@ export default function CatCare() {
         bgImage="/cat-banner.jpeg"
       />
       <Grid2 items={facts} cardType="card2" />
+      <Choice facts={facts} />
     </>
   );
 }

@@ -1,15 +1,15 @@
 import Head from "next/head";
 import Grid2 from '../components/Grid2';
 import Banner from "@/components/Banner";
-import Card1 from "@/components/card1";
+
 
 
 export default function Homepage() {
   const gridItems = [
-  { image: "/cat-sleep.jpg", title: "Sleeping Cat", description: "Cute cat sleeping", buttonText: "See More" },
-  { image: "/cat-sleep.jpg", title: "Sleeping Cat", description: "Cute cat sleeping", buttonText: "See More" },
-  { image: "/cat-sleep.jpg", title: "Sleeping Cat", description: "Cute cat sleeping", buttonText: "See More" },
-  { image: "/cat-sleep.jpg", title: "Sleeping Cat", description: "Cute cat sleeping", buttonText: "See More" },
+  { image: "/cat-sleep.jpg", title: "Sleeping Cat", description: "Cute cat sleeping", buttonText: "See More", age: "2 years", breed: "Maine Coon" },
+  { image: "/cat-sleep.jpg", title: "Sleeping Cat", description: "Cute cat sleeping", buttonText: "See More", age: "1 year", breed: "Siamese" },
+  { image: "/cat-sleep.jpg", title: "Sleeping Cat", description: "Cute cat sleeping", buttonText: "See More", age: "3 years", breed: "Persian" },
+  { image: "/cat-sleep.jpg", title: "Sleeping Cat", description: "Cute cat sleeping", buttonText: "See More", age: "2 years", breed: "British Shorthair" },
 ];
   return (
     
@@ -25,7 +25,7 @@ export default function Homepage() {
         description="A place where you can find cute kitties and learn how to take proper care of them. Discover adoption options, nutrition tips, and more."
         bgImage="/cat-banner.jpeg"
       />
-    <Grid2 cardType="card1" items={gridItems} />
+    <Grid2 items={gridItems} />
     </>
   );
 }

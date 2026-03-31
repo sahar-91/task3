@@ -43,7 +43,7 @@ export default function Navbar() {
             <li className={`hover:text-pink-600 ${linkUndeline("/adopt")}`}><Link href="/adopt">Adopt</Link></li>
             <li className={`hover:text-pink-600 ${linkUndeline("/catCare")}`}><Link href="/catCare">Cat care</Link></li>
             <li className={`hover:text-pink-600 ${linkUndeline("/contact")}`}><Link href="/contact">Contact</Link></li>
-          </ul>e"
+          </ul>
         </nav>
       </header>
     </div>

@@ -37,7 +37,7 @@ export default function Choice({ facts }) {
               value={fact.title}
               checked={selectedOptions.includes(fact.title)}
               onChange={() => handleChange(fact.title)}
-              className="w-4 h-4 accent-[palevioletred]"
+              className="w-4 h-4 accent-[palevioletred] cursor-pointer"
             />
             {fact.title}
           </label>
@@ -45,7 +45,7 @@ export default function Choice({ facts }) {
 
         <button
           type="submit"
-          className="mt-4 px-4 py-2 bg-[palevioletred] text-white rounded-lg hover:bg-pink-600"
+          className="mt-4 px-4 py-2 bg-[palevioletred] text-white rounded-lg hover:bg-pink-600 cursor-pointer transition-colors duration-300"
         >
           Submit
         </button>

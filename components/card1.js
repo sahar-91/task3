@@ -20,7 +20,7 @@ export default function Card1({ image, title, description, buttonText, buttonLin
         {buttonText && (
           <button
             onClick={onClick} 
-            className="inline-block px-4 py-2 bg-[palevioletred] text-white rounded-lg group-hover:scale-110 transform duration-300 ease-in-out"
+            className="cursor-pointer inline-block px-4 py-2 bg-[palevioletred] text-white rounded-lg group-hover:scale-110 transform duration-300 ease-in-out"
           >
             {buttonText}
           </button>

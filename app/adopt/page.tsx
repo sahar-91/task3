@@ -15,6 +15,7 @@ export default function Adopt() {
         title="Adopt a Cat!"
         description="Find your new feline friend today and give them a loving home."
         bgImage="/cat-banner.jpeg"
+        titleClass="text-blue-300"
       />
       <Grid2 items={catData} cardType="card1" />
     </>

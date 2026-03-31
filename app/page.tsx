@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Grid2 from '../components/Grid2';
 import Banner from "@/components/Banner";
-
+   
 
 
 export default function Homepage() {
@@ -24,6 +24,7 @@ export default function Homepage() {
         title="Welcome to Our Website"
         description="A place where you can find cute kitties and learn how to take proper care of them. Discover adoption options, nutrition tips, and more."
         bgImage="/cat-banner.jpeg"
+        titleClass="text-yellow-300"
       />
     <Grid2 items={gridItems} />
     </>

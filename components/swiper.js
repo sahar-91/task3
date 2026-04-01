@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 
 export default function SwiperComp({swipe}) {
   useEffect(() => {
-    new Swiper(".swiper-container", {
+    new Swiper(".swiper", {
       modules: [Navigation, Pagination], 
       spaceBetween: 16,      
       keyboard: { enabled: true },
@@ -19,7 +19,10 @@ export default function SwiperComp({swipe}) {
         640: { slidesPerView: 2 },
         768: { slidesPerView: 3 },
       },
-      navigation: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
       pagination: { 
         el: '.swiper-pagination',
         clickable: true },
@@ -28,8 +31,8 @@ export default function SwiperComp({swipe}) {
   }, []);
 
   return (
-    <div className="container max-w-[1440px] overflow-hidden mx-auto">
-    <div className="swiper-container py-4">
+    <div className="container max-w-[1440px] overflow-hidden mx-auto mt-1">
+    <div className="swiper py-4">
       
       <div className="swiper-wrapper">
         {swipe.map((img, index) => (
@@ -43,6 +46,8 @@ export default function SwiperComp({swipe}) {
         ))}
       </div>
       <div className="swiper-pagination"></div>
+      <div className="swiper-button-prev text-color-[paleviolet] bg-white rounded-3xl shadow-md"></div>
+      <div className="swiper-button-next text-color-[paleviolet] bg-white rounded-3xl shadow-md"></div>
     </div>
     </div>
   );

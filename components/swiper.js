@@ -46,8 +46,8 @@ export default function SwiperComp({swipe}) {
         ))}
       </div>
       <div className="swiper-pagination"></div>
-      <div className="swiper-button-prev text-color-[paleviolet] bg-white rounded-3xl shadow-md"></div>
-      <div className="swiper-button-next text-color-[paleviolet] bg-white rounded-3xl shadow-md"></div>
+      <div className="swiper-button-prev !text-[palevioletred] border-white border-8 bg-white rounded-3xl shadow-md"></div>
+      <div className="swiper-button-next !text-[palevioletred] border-white border-8 bg-white rounded-3xl shadow-md"></div>
     </div>
     </div>
   );

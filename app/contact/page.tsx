@@ -1,11 +1,11 @@
 import Banner from "@/components/Banner";
 import Form from "@/components/form";
 
-const contactFields = [
-  { type: "text", placeholder: "Name" },
-  { type: "email", placeholder: "Email" },
-  { type: "textarea", placeholder: "Message", rows: 5 },
-];
+const fields = [
+  { name: "name", type: "text", placeholder: "Name" },
+  { name: "email", type: "email", placeholder: "Email" },
+  { name: "message", type: "textarea", placeholder: "Message" }
+]; 
 
 export default function Contact() {
   return (
@@ -17,7 +17,7 @@ export default function Contact() {
       />
       <div className="container mx-auto px-4 py-10">
         <div className="max-w-md mx-auto bg-white shadow-md rounded-lg p-6">
-          <Form fields={contactFields} buttonText="Send" />
+          <Form fields={fields} buttonText="Send" />
         </div>
         <div className="text-center mt-8 text-gray-700">
           <p>Email: info@catsite.com</p>

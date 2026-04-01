@@ -28,7 +28,7 @@ export default function SwiperComp({swipe}) {
   }, []);
 
   return (
-    <div className="max-w-[1440px] overflow-hidden mx-auto">
+    <div className="container max-w-[1440px] overflow-hidden mx-auto">
     <div className="swiper-container py-4">
       
       <div className="swiper-wrapper">

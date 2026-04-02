@@ -4,7 +4,7 @@ import Grid2 from "@/components/Grid2";
 import Banner from "@/components/Banner";
 import Choice from "@/components/choice";
 import CategoryFilter from "@/components/CategoryFilter";
-import According from "@/components/according";
+import According from "@/components/accordingMaterial";
 
 export default function CatCare() {
   const [category, setCategory] = useState("All");

@@ -4,6 +4,7 @@ import Grid2 from "@/components/Grid2";
 import Banner from "@/components/Banner";
 import Choice from "@/components/choice";
 import CategoryFilter from "@/components/CategoryFilter";
+import According from "@/components/according";
 
 export default function CatCare() {
   const [category, setCategory] = useState("All");
@@ -23,6 +24,13 @@ export default function CatCare() {
     { title: "Dental Care", description: "Brush your cat’s teeth or provide dental treats to prevent oral issues.", category: "Health" },
   ];
 
+  const according = [
+    {id: 1, title: "Dr. Jane Smith, Veterinarian", description: "Regular vet visits are crucial for early detection of health issues." },
+    {id: 2, title: "Emily Johnson, Cat Behaviorist", description: "Understanding your cat’s behavior can improve your relationship and their well-being." },
+    {id: 3, title: "Dr. Mark Davis, Feline Nutritionist", description: "A balanced diet tailored to your cat’s needs promotes longevity and vitality." },
+  ]
+
+
   const categories = ["All", ...new Set(facts.map(f => f.category))];
   const filteredFacts = category === "All" ? facts : facts.filter(f => f.category === category);
 
@@ -34,14 +42,17 @@ export default function CatCare() {
         bgImage="/cat-banner.jpeg"
       />
 
-      {/* Category Filter Component */}
+    
       <CategoryFilter
         categories={categories}
         selected={category}
         onChange={setCategory}
       />
 
+      
+
       <Grid2 items={filteredFacts} cardType="card2" />
+      <According array={according} />
       <Choice facts={facts} />
     </>
   );
